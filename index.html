@@ -124,4 +124,111 @@
 
     button {
       padding: 10px 20px;
-      b
+      background: #2563eb;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.6rem; }
+      section { margin: 15px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bangalore Private Investigate</h1>
+  <p class="tagline">Discreet & Reliable Marital Investigation Services</p>
+  <p>We specialize in pre-marital checks, lifestyle verification, and post-marital investigations — helping you make informed, confident decisions.</p>
+
+  <div class="badges">
+    <span>100% Confidential</span>
+    <span>Legally Compliant</span>
+    <span>Fact-Based Reports</span>
+  </div>
+</header>
+
+<section>
+  <h2>Our Investigation Services</h2>
+
+  <h3>✔ Pre-Marital Background Checks</h3>
+  <p>We verify the information shared during arranged or love marriage discussions:</p>
+  <ul>
+    <li>Education verification</li>
+    <li>Job & employment background</li>
+    <li>Family background & reputation</li>
+    <li>Financial red flags (loans, lifestyle mismatch)</li>
+  </ul>
+
+  <h3>✔ Lifestyle Verification</h3>
+  <p>Understand the real habits and behaviour of the person:</p>
+  <ul>
+    <li>Social circle & day-to-day lifestyle</li>
+    <li>Habits such as alcohol, gambling, secretive behaviour</li>
+    <li>Reputation in neighbourhood or workplace</li>
+    <li>Online/offline behaviour (within legal limits)</li>
+  </ul>
+
+  <h3>✔ Post-Marital Investigations</h3>
+  <p>For situations where you suspect something is wrong after marriage:</p>
+  <ul>
+    <li>Suspicion of infidelity</li>
+    <li>Concerns about abuse or hidden addictions</li>
+    <li>Fraud, undisclosed loans, or hidden financial issues</li>
+  </ul>
+
+  <div class="note">
+    We do not hack phones or use any illegal methods. All investigations follow legal and ethical boundaries.
+  </div>
+</section>
+
+<section>
+  <h2>Contact Us Confidentially</h2>
+  <p>Fill out the form below. We will reach out privately to discuss your situation.</p>
+
+  <!-- Form sending to email -->
+  <form action="mailto:akankshapkumar@gmail.com" method="post" enctype="text/plain">
+
+    <label>Name</label>
+    <input type="text" name="Name" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="Phone" required>
+
+    <label>Email</label>
+    <input type="email" name="Email" required>
+
+    <label>Message</label>
+    <textarea name="Message" placeholder="Describe your requirement..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  © <span id="year"></span> Bangalore Private Investigate. All Rights Reserved.
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
